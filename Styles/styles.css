@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Akrobat;
+    src: url(./fonts/Akrobat/Commercial/TTF/Akrobat-ExtraBold.ttf)
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 196, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Akrobat';
+}
+
+.header_left {
+    width: 200px;
+    margin-left: 20%;
+}
+
+.header_right {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    border: 1px solid black;
+    margin-right: 20%;
+}
+
+.header_right a {
+    cursor: pointer;
+}
+
+
+/* PRESENTATION AND MAIN SLIDER: */
