@@ -3,9 +3,19 @@
     src: url(./fonts/Akrobat/Commercial/TTF/Akrobat-ExtraBold.ttf)
 }
 
+@font-face {
+    font-family: Futurist;
+    src: url(./fonts/Forgotten_futurist/forgotten\ futurist\ bd.ttf)
+}
+
 * {
     margin: 0px;
     box-sizing: border-box;
+}
+
+a,
+button {
+    cursor: pointer;
 }
 
 .header {
@@ -23,6 +33,36 @@
     margin-left: 20%;
 }
 
+.header_left-name {
+    position: absolute;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    top: 27px;
+}
+
+.header_left-hidden {
+    left: 55px;
+    top: -35px;
+    width: 130px;
+    height: 14px;
+    position: relative;
+    background-color: rgb(255, 196, 0);
+}
+
+.header_left-logoImg {
+    margin-top: 24px;
+    /* transform: rotate(45deg); */
+}
+
+.header_left-logoChar {
+    font-family: 'Akrobat';
+    font-weight: 800;
+    position: absolute;
+    /* transform: rotate(-45deg); */
+    font-size: 40px;
+    margin-top: 25px;
+}
+
 .header_right {
     display: flex;
     justify-content: space-around;
@@ -31,9 +71,42 @@
     margin-right: 20%;
 }
 
-.header_right a {
-    cursor: pointer;
+
+/* PRESENTATION AND MAIN SLIDE: */
+
+.presentation {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 700px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
 }
 
+.presentation-title {
+    font-family: 'Futurist';
+    margin: 20px auto 20px auto;
+    font-size: 40px;
+    text-align: center;
+}
 
-/* PRESENTATION AND MAIN SLIDER: */
+.presentation-paragraph {
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
+    font-family: 'Akrobat';
+}
+
+.presentation-btn {
+    width: 130px;
+    height: 45px;
+    background: rgb(255, 196, 0);
+    border: none;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
