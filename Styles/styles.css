@@ -96,17 +96,22 @@ button {
 
 .presentation-title {
     font-family: 'Akrobat';
-    margin: 20px auto 20px auto;
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 33vh;
+    font-family: 'Akrobat';
+    position: absolute;
 }
 
-.presentation-paragraph {
-    font-size: 20px;
-    text-align: center;
-    line-height: normal;
-    font-family: 'Akrobat';
+@media only screen and (max-width: 1366px) {
+    .presentation-title {
+        margin-top: 29.5vh;
+    }
 }
 
 .presentation-btn {
@@ -114,13 +119,14 @@ button {
     width: 130px;
     height: 45px;
     background: rgba(255, 255, 255, 0.5);
-    font-size: 17px;
+    font-size: 16px;
     border: none;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     margin-top: 42vh;
+    font-family: 'Akrobat';
 }
 
 
