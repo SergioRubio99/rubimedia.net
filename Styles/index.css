@@ -1,0 +1,339 @@
+@font-face {
+    font-family: Akrobat;
+    src: url(./fonts/Akrobat/Commercial/TTF/Akrobat-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: Futurist;
+    src: url(./fonts/Forgotten_futurist/forgotten\ futurist\ bd.ttf)
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    opacity: 0.52;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Akrobat';
+}
+
+.header_left {
+    width: 200px;
+    margin-left: 20%;
+}
+
+.header_left-name {
+    position: absolute;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    top: 27px;
+}
+
+.header_left-hidden {
+    left: 55px;
+    top: -35px;
+    width: 130px;
+    height: 14px;
+    position: relative;
+    background-color: rgba(255, 255, 255);
+}
+
+.header_left-logoImg {
+    margin-top: 24px;
+    /* transform: rotate(45deg); */
+    /* To get it white: */
+    /* filter: brightness(0) invert(1); */
+}
+
+.header_left-logoChar {
+    font-family: 'Akrobat';
+    font-weight: 800;
+    position: absolute;
+    /* transform: rotate(-45deg); */
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+.header_right {
+    display: flex;
+    width: 400px;
+    /* border: 1px solid black; */
+    margin-right: 15%;
+    font-size: 20px;
+}
+
+.header_right a {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    transition: all 200ms;
+    justify-content: center;
+}
+
+.header_right a:hover {
+    color: rgb(116, 116, 116);
+    font-size: 22px;
+}
+
+.header_right-github {
+    text-decoration: none;
+    color: black;
+}
+
+.header_right-contact {
+    text-decoration: none;
+    color: black;
+}
+
+.header_right-linkedIn {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* PRESENTATION AND MAIN SLIDE: */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.presentation-title {
+    font-family: 'Akrobat';
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 33vh;
+    font-family: 'Akrobat';
+    position: absolute;
+}
+
+@media only screen and (max-width: 1366px) {
+    .presentation-title {
+        margin-top: 29.5vh;
+    }
+}
+
+.presentation-btn {
+    position: absolute;
+    width: 130px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 42vh;
+    font-family: 'Akrobat';
+}
+
+
+/* 
+.spacer {
+    aspect-ratio: 960/540;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+}
+
+.layer1 {
+    background-image: url("./wave-haikei.svg");
+} */
+
+.spacer2 {
+    aspect-ratio: 960/540;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+    position: fixed;
+}
+
+.layer2 {
+    background-image: url("./mountain-peak-night-dusk.jpg");
+    background-size: cover;
+    transform: scale(1.2);
+}
+
+.black_layer {
+    aspect-ratio: 960/540;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(165, 165, 165, 0.3);
+}
+
+.crowdfunding {
+    background-color: rgba(165, 165, 165, 0.3);
+    width: 33.333%;
+    height: 45vh;
+    transition: all 400ms;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.crowdfunding-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.crowdfunding-text {
+    align-self: flex-start;
+    text-align: center;
+    font-family: 'Akrobat';
+    font-weight: 100;
+    font-size: 25px;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.crowdfunding-bg {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(165, 165, 165, 0.3);
+}
+
+.crowdfunding:hover {
+    background-color: rgba(129, 129, 129, 0.3);
+    width: 33.333%;
+    height: 45vh;
+    cursor: pointer;
+}
+
+.pokeApi {
+    background-color: rgba(165, 165, 165, 0.3);
+    width: 33.333%;
+    height: 45vh;
+    transition: all 400ms;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pokeApi:hover {
+    background-color: rgba(129, 129, 129, 0.3);
+    width: 33.333%;
+    height: 45vh;
+    cursor: pointer;
+}
+
+.pokeApi-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pokeApi-text {
+    align-self: flex-start;
+    text-align: center;
+    font-family: 'Akrobat';
+    font-weight: 100;
+    font-size: 25px;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.pokeApi-bg {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(165, 165, 165, 0.3);
+}
+
+.propertyManager {
+    background-color: rgba(165, 165, 165, 0.3);
+    width: 33.333%;
+    height: 45vh;
+    transition: all 400ms;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.propertyManager:hover {
+    background-color: rgba(129, 129, 129, 0.3);
+    width: 33.333%;
+    height: 45vh;
+    cursor: pointer;
+}
+
+.propertyManager-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.propertyManager-text {
+    align-self: flex-start;
+    text-align: center;
+    font-family: 'Akrobat';
+    font-weight: 100;
+    font-size: 25px;
+    margin-top: 30px;
+    opacity: 0;
+    width: 100%;
+}
+
+.propertyManager-bg {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(165, 165, 165, 0.3);
+}

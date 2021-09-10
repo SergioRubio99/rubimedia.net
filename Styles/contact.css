@@ -18,7 +18,7 @@ button {
     cursor: pointer;
 }
 
-.header {
+.header-contact {
     width: 100%;
     height: 60px;
     opacity: 0.52;
@@ -29,19 +29,21 @@ button {
     font-family: 'Akrobat';
 }
 
-.header_left {
+.header_left-contact {
     width: 200px;
     margin-left: 20%;
+    text-decoration: none;
+    color: black;
 }
 
-.header_left-name {
+.header_left-name-contact {
     position: absolute;
     letter-spacing: 2px;
     margin-left: 5px;
     top: 27px;
 }
 
-.header_left-hidden {
+.header_left-hidden-contact {
     left: 55px;
     top: -35px;
     width: 130px;
@@ -50,14 +52,14 @@ button {
     background-color: rgba(255, 255, 255);
 }
 
-.header_left-logoImg {
+.header_left-logoImg-contact {
     margin-top: 24px;
     /* transform: rotate(45deg); */
     /* To get it white: */
     /* filter: brightness(0) invert(1); */
 }
 
-.header_left-logoChar {
+.header_left-logoChar-contact {
     font-family: 'Akrobat';
     font-weight: 800;
     position: absolute;
@@ -88,6 +90,16 @@ button {
     font-size: 22px;
 }
 
+.header_right-github {
+    text-decoration: none;
+    color: black;
+}
+
+.header_right-about {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* PRESENTATION AND MAIN SLIDE: */
 
@@ -108,7 +120,7 @@ button {
     color: white;
 }
 
-.presentation-title {
+.e-mail {
     font-family: 'Akrobat';
     font-size: 40px;
     text-align: center;
@@ -128,12 +140,12 @@ button {
     }
 }
 
-.presentation-btn {
+.number {
+    text-align: center;
     position: absolute;
-    width: 130px;
+    width: 300px;
     height: 45px;
-    background: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
+    font-size: 40px;
     border: none;
     margin-left: auto;
     margin-right: auto;

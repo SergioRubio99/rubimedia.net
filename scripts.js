@@ -1,3 +1,5 @@
+const d = document;
+
 gsap.fromTo('.header', { y: -60 }, { ease: 'circ.out', duration: 1, delay: 0.3, y: 0 })
 gsap.fromTo('.header_left-logoChar', { opacity: 0, x: -30 }, { delay: 0.5, opacity: 1, x: 15 })
     // gsap.fromTo('.header_left-logoImg', { opacity: 0, x: -20 }, { opacity: 1, x: 0, rotation: 220 })
@@ -18,7 +20,52 @@ gsap.fromTo('.layer2', { y: 0 }, { ease: Power0, duration: 1.5, y: -10 })
 
 
 
-// Button animation:
 
-gsap.fromTo('.presentation-btn', { y: 0, opacity: 0, }, { duration: 1, y: 8, delay: 1, duration: 1, opacity: 1, })
-gsap.fromTo('.presentation-title', { y: -10, opacity: 0, }, { y: 0, delay: 1, duration: 1, opacity: 1, })
+gsap.fromTo('.presentation-btn', { y: 0, opacity: 0, }, { duration: 1, y: 8, delay: 1, duration: 1, opacity: 1, });
+gsap.fromTo('.presentation-title', { y: -10, opacity: 0, }, { y: 0, delay: 1, duration: 1, opacity: 1, });
+
+const crowdfunding = d.querySelector('.crowdfunding')
+crowdfunding.addEventListener("mouseenter", function(event) {
+    gsap.fromTo('.crowdfunding-text', { opacity: 0, }, { opacity: 1, });
+    crowdfunding.addEventListener("mouseleave", function(event) {
+        gsap.fromTo('.crowdfunding-text', { opacity: 1, }, { opacity: 0, });
+
+    }, false);
+}, false);
+
+const pokeApi = d.querySelector('.pokeApi')
+pokeApi.addEventListener("mouseenter", function(event) {
+    gsap.fromTo('.pokeApi-text', { opacity: 0, }, { opacity: 1, });
+    pokeApi.addEventListener("mouseleave", function(event) {
+        gsap.fromTo('.pokeApi-text', { opacity: 1, }, { opacity: 0, });
+
+    }, false);
+}, false);
+
+const propertyManager = d.querySelector('.propertyManager')
+propertyManager.addEventListener("mouseenter", function(event) {
+    gsap.fromTo('.propertyManager-text', { opacity: 0, }, { opacity: 1, });
+    propertyManager.addEventListener("mouseleave", function(event) {
+        gsap.fromTo('.propertyManager-text', { opacity: 1, }, { opacity: 0, });
+
+    }, false);
+}, false);
+
+
+// SCROLL Y AXIS ANIMATION TO SHOW THE PORTFOLIO:
+const presentationBtn = d.querySelector('.presentation-btn');
+
+presentationBtn.addEventListener('click', function(event) {
+    let a = window.scrollY;
+    let int = setInterval(() => {
+        a += 20;
+        window.scroll(0, a);
+    }, 1);
+
+    setInterval(() => {
+        if (a > 400) {
+            clearInterval(int);
+        }
+    })
+
+}, 1);
