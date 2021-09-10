@@ -208,11 +208,11 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(165, 165, 165, 0.3);
+    background-color: rgba(165, 165, 165, 0.03);
 }
 
 .crowdfunding {
-    background-color: rgba(165, 165, 165, 0.3);
+    background-color: rgba(165, 165, 165, 0.03);
     width: 33.333%;
     height: 45vh;
     transition: all 400ms;
@@ -243,7 +243,7 @@ button {
 .crowdfunding-bg {
     position: absolute;
     width: 100%;
-    background-color: rgba(165, 165, 165, 0.3);
+    background-color: rgba(165, 165, 165, 0.03);
 }
 
 .crowdfunding:hover {
@@ -254,7 +254,7 @@ button {
 }
 
 .pokeApi {
-    background-color: rgba(165, 165, 165, 0.3);
+    background-color: rgba(165, 165, 165, 0.03);
     width: 33.333%;
     height: 45vh;
     transition: all 400ms;
@@ -292,11 +292,11 @@ button {
 .pokeApi-bg {
     position: absolute;
     width: 100%;
-    background-color: rgba(165, 165, 165, 0.3);
+    background-color: rgba(165, 165, 165, 0.03);
 }
 
 .propertyManager {
-    background-color: rgba(165, 165, 165, 0.3);
+    background-color: rgba(165, 165, 165, 0.03);
     width: 33.333%;
     height: 45vh;
     transition: all 400ms;
@@ -335,5 +335,5 @@ button {
 .propertyManager-bg {
     position: absolute;
     width: 100%;
-    background-color: rgba(165, 165, 165, 0.3);
+    background-color: rgba(165, 165, 165, 0.03);
 }
