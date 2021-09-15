@@ -214,6 +214,7 @@ button {
 .crowdfunding {
     background-color: rgba(165, 165, 165, 0.03);
     height: 45vh;
+    width: 25%;
     transition: all 400ms;
     text-decoration: none;
     color: black;
@@ -254,6 +255,7 @@ button {
 .pokeApi {
     background-color: rgba(165, 165, 165, 0.03);
     height: 45vh;
+    width: 25%;
     transition: all 400ms;
     text-decoration: none;
     color: black;
@@ -294,6 +296,7 @@ button {
 .propertyManager {
     background-color: rgba(165, 165, 165, 0.03);
     height: 45vh;
+    width: 25%;
     transition: all 400ms;
     text-decoration: none;
     color: black;
@@ -335,6 +338,7 @@ button {
 .socialdashboard {
     background-color: rgba(165, 165, 165, 0.03);
     height: 45vh;
+    width: 25%;
     transition: all 400ms;
     text-decoration: none;
     color: black;
