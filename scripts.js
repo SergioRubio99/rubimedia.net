@@ -51,6 +51,14 @@ propertyManager.addEventListener("mouseenter", function(event) {
     }, false);
 }, false);
 
+const socialdashboard = d.querySelector('.socialdashboard')
+socialdashboard.addEventListener("mouseenter", function(event) {
+    gsap.fromTo('.socialdashboard-text', { opacity: 0, }, { opacity: 1, });
+    socialdashboard.addEventListener("mouseleave", function(event) {
+        gsap.fromTo('.socialdashboard-text', { opacity: 1, }, { opacity: 0, });
+
+    }, false);
+}, false);
 
 // SCROLL Y AXIS ANIMATION TO SHOW THE PORTFOLIO:
 const presentationBtn = d.querySelector('.presentation-btn');

@@ -213,7 +213,6 @@ button {
 
 .crowdfunding {
     background-color: rgba(165, 165, 165, 0.03);
-    width: 33.333%;
     height: 45vh;
     transition: all 400ms;
     text-decoration: none;
@@ -248,14 +247,12 @@ button {
 
 .crowdfunding:hover {
     background-color: rgba(129, 129, 129, 0.3);
-    width: 33.333%;
     height: 45vh;
     cursor: pointer;
 }
 
 .pokeApi {
     background-color: rgba(165, 165, 165, 0.03);
-    width: 33.333%;
     height: 45vh;
     transition: all 400ms;
     text-decoration: none;
@@ -269,7 +266,6 @@ button {
 
 .pokeApi:hover {
     background-color: rgba(129, 129, 129, 0.3);
-    width: 33.333%;
     height: 45vh;
     cursor: pointer;
 }
@@ -297,7 +293,6 @@ button {
 
 .propertyManager {
     background-color: rgba(165, 165, 165, 0.03);
-    width: 33.333%;
     height: 45vh;
     transition: all 400ms;
     text-decoration: none;
@@ -311,7 +306,6 @@ button {
 
 .propertyManager:hover {
     background-color: rgba(129, 129, 129, 0.3);
-    width: 33.333%;
     height: 45vh;
     cursor: pointer;
 }
@@ -333,6 +327,46 @@ button {
 }
 
 .propertyManager-bg {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(165, 165, 165, 0.03);
+}
+
+.socialdashboard {
+    background-color: rgba(165, 165, 165, 0.03);
+    height: 45vh;
+    transition: all 400ms;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.socialdashboard:hover {
+    background-color: rgba(129, 129, 129, 0.3);
+    height: 45vh;
+    cursor: pointer;
+}
+
+.socialdashboard-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socialdashboard-text {
+    align-self: flex-start;
+    text-align: center;
+    font-family: 'Akrobat';
+    font-weight: 100;
+    font-size: 25px;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.socialdashboard-bg {
     position: absolute;
     width: 100%;
     background-color: rgba(165, 165, 165, 0.03);
