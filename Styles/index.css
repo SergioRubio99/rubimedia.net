@@ -212,17 +212,25 @@ button {
 }
 
 .crowdfunding {
-    background-color: rgba(165, 165, 165, 0.03);
+    background-image: url(./image-hero-mobile.jpg);
     height: 45vh;
     width: 25%;
     transition: all 400ms;
     text-decoration: none;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
+    opacity: 0;
+}
+
+.crowdfunding:hover {
+    background-color: rgba(129, 129, 129, 0.3);
+    height: 45vh;
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .crowdfunding-title {
@@ -246,38 +254,39 @@ button {
     background-color: rgba(165, 165, 165, 0.03);
 }
 
-.crowdfunding:hover {
-    background-color: rgba(129, 129, 129, 0.3);
-    height: 45vh;
-    cursor: pointer;
-}
-
 .pokeApi {
-    background-color: rgba(165, 165, 165, 0.03);
+    background-image: url(./api_rest.png);
+    background-size: cover;
+    /* background-position-x: 1200px;
+    background-position-y: 800px; */
     height: 45vh;
     width: 25%;
     transition: all 400ms;
     text-decoration: none;
-    color: black;
+    color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
+    opacity: 0;
+    padding-top: 20px;
 }
 
 .pokeApi:hover {
     background-color: rgba(129, 129, 129, 0.3);
     height: 45vh;
     cursor: pointer;
+    opacity: 0.6;
 }
 
 .pokeApi-title {
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Akrobat';
+    font-weight: 100;
 }
 
-.pokeApi-text {
+
+/* .pokeApi-text {
     align-self: flex-start;
     text-align: center;
     font-family: 'Akrobat';
@@ -285,7 +294,7 @@ button {
     font-size: 25px;
     margin-top: 30px;
     opacity: 0;
-}
+} */
 
 .pokeApi-bg {
     position: absolute;
@@ -294,12 +303,11 @@ button {
 }
 
 .propertyManager {
-    background-color: rgba(165, 165, 165, 0.03);
     height: 45vh;
     width: 25%;
     transition: all 400ms;
     text-decoration: none;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,28 +344,30 @@ button {
 }
 
 .socialdashboard {
-    background-color: rgba(165, 165, 165, 0.03);
+    background-image: url(./social.png);
     height: 45vh;
     width: 25%;
     transition: all 400ms;
     text-decoration: none;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
+    opacity: 0;
 }
 
 .socialdashboard:hover {
-    background-color: rgba(129, 129, 129, 0.3);
     height: 45vh;
     cursor: pointer;
+    opacity: 0.6;
 }
 
 .socialdashboard-title {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0px;
 }
 
 .socialdashboard-text {

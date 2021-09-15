@@ -71,7 +71,7 @@ presentationBtn.addEventListener('click', function(event) {
     }, 1);
 
     setInterval(() => {
-        if (a > 400) {
+        if (a > 500) {
             clearInterval(int);
         }
     })
