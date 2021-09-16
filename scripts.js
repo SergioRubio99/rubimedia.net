@@ -26,6 +26,7 @@ if (window.innerWidth > 600) {
 
     gsap.fromTo('.presentation-btn', { y: 0, opacity: 0, }, { duration: 1, y: 8, delay: 1, duration: 1, opacity: 1, });
     gsap.fromTo('.presentation-title', { y: -10, opacity: 0, }, { y: 0, delay: 1, duration: 1, opacity: 1, });
+    gsap.fromTo('.presentation-number', { y: -10, opacity: 0, }, { y: 0, delay: 1, duration: 1, opacity: 1, });
 
 } else {
     //Responsive Mobile:
@@ -40,6 +41,7 @@ if (window.innerWidth > 600) {
 
     gsap.fromTo('.presentation-btn', { y: 0, opacity: 0, }, { duration: 1, delay: 2.6, duration: 1, opacity: 2, });
     gsap.fromTo('.presentation-title', { opacity: 0, }, { delay: 2.6, duration: 2, opacity: 1, });
+    gsap.fromTo('.presentation-number', { opacity: 0, }, { delay: 2.6, duration: 2, opacity: 1, });
 
 }
 
