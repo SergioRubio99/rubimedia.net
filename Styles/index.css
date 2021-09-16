@@ -554,9 +554,9 @@ button {
         height: 100%;
         background-image: url("./mountain-peak-night-dusk-min.jpg");
         background-position: center;
-        background-size: cover;
+        background-size: auto;
         z-index: -1;
-        position: block;
+        position: fixed;
         background-color: rgba(0, 0, 0, 0.8);
         /* overflow-x: hidden; */
     }
