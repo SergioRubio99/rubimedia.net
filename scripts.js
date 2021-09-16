@@ -106,21 +106,21 @@ if (window.innerWidth > 600) {
     }, 1);
 
 } else {
-    // // SCROLL Y AXIS ANIMATION TO SHOW THE PORTFOLIO:
-    // const presentationBtn = d.querySelector('.presentation-btn');
+    // SCROLL Y AXIS ANIMATION TO SHOW THE PORTFOLIO:
+    const presentationBtn = d.querySelector('.presentation-btn');
 
-    // presentationBtn.addEventListener('click', function(event) {
-    //     let a = window.scrollY;
-    //     let int = setInterval(() => {
-    //         a += 20;
-    //         window.scroll(0, a);
-    //     }, 1);
+    presentationBtn.addEventListener('click', function(event) {
+        let a = window.scrollY;
+        let int = setInterval(() => {
+            a += 20;
+            window.scroll(0, a);
+        }, 1);
 
-    //     setInterval(() => {
-    //         if (a > 1200) {
-    //             clearInterval(int);
-    //         }
-    //     })
+        setInterval(() => {
+            if (a > 1200) {
+                clearInterval(int);
+            }
+        })
 
-    // }, 1);
+    }, 1);
 }
