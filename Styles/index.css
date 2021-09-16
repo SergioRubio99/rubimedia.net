@@ -553,7 +553,7 @@ button {
         width: 100%;
         height: 100vh;
         background-image: url("./mountain-peak-night-dusk-min.jpg");
-        background-position: center;
+        background-position: bottom;
         background-size: auto;
         z-index: -999;
         position: fixed;
