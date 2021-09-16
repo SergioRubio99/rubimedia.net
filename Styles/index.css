@@ -220,7 +220,7 @@ button {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
     opacity: 0;
@@ -243,7 +243,7 @@ button {
     text-align: center;
     font-family: 'Akrobat';
     font-weight: 100;
-    font-size: 25px;
+    font-size: 28px;
     margin-top: 30px;
     opacity: 0;
 }
@@ -353,7 +353,7 @@ button {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     padding-left: 10px;
     padding-right: 10px;
     opacity: 0;
@@ -376,7 +376,7 @@ button {
     text-align: center;
     font-family: 'Akrobat';
     font-weight: 100;
-    font-size: 25px;
+    font-size: 28px;
     margin-top: 30px;
     opacity: 0;
 }
