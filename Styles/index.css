@@ -482,263 +482,245 @@ button {
         color: black;
         font-size: 35px;
     }
-}
-
-
-/* PRESENTATION AND MAIN SLIDE: */
-
-.main {
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./mountain-peak-night-dusk.jpg");
-    margin-top: 170px;
-}
-
-.presentation {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 70%;
-    color: white;
-}
-
-.presentation-title {
-    font-family: 'Akrobat';
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    margin-top: 90px;
-    font-family: 'Akrobat';
-    position: absolute;
-}
-
-
-/* 
-@media only screen and (max-width: 1366px) {
-    .presentation-title {
-        margin-top: 29.5vh;
+    /* PRESENTATION AND MAIN SLIDE: */
+    .main {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-image: url("./mountain-peak-night-dusk.jpg"); */
+        margin-top: 500px;
     }
-} */
-
-.presentation-btn {
-    position: absolute;
-    width: 130px;
-    height: 45px;
-    background: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    margin-top: 42vh;
-    font-family: 'Akrobat';
-}
-
-.spacer2 {
-    aspect-ratio: 960/540;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: -2;
-    position: fixed;
-}
-
-.layer2 {
-    background-image: url("./mountain-peak-night-dusk.jpg");
-    background-size: cover;
-    transform: scale(1.2);
-}
-
-.black_layer {
-    aspect-ratio: 960/540;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.portfolio {
-    width: 100%;
-    height: 45vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(165, 165, 165, 0.03);
-}
-
-.crowdfunding {
-    background-image: url(./image-hero-mobile.jpg);
-    height: 45vh;
-    width: 25%;
-    transition: all 400ms;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    opacity: 0;
-}
-
-.crowdfunding:hover {
-    background-color: rgba(129, 129, 129, 0.3);
-    height: 45vh;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-.crowdfunding-title {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.crowdfunding-text {
-    align-self: flex-start;
-    text-align: center;
-    font-family: 'Akrobat';
-    font-weight: 100;
-    font-size: 28px;
-    margin-top: 30px;
-    opacity: 0;
-}
-
-.crowdfunding-bg {
-    position: absolute;
-    width: 100%;
-    background-color: rgba(165, 165, 165, 0.03);
-}
-
-.pokeApi {
-    background-image: url(./api_rest.png);
-    background-size: cover;
-    height: 45vh;
-    width: 25%;
-    transition: all 400ms;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    opacity: 0;
-    padding-top: 20px;
-}
-
-.pokeApi:hover {
-    background-color: rgba(129, 129, 129, 0.3);
-    height: 45vh;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-.pokeApi-title {
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Akrobat';
-    font-weight: 100;
-}
-
-.pokeApi-bg {
-    position: absolute;
-    width: 100%;
-    background-color: rgba(165, 165, 165, 0.03);
-}
-
-.propertyManager {
-    height: 45vh;
-    width: 25%;
-    transition: all 400ms;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.propertyManager:hover {
-    background-color: rgba(129, 129, 129, 0.3);
-    height: 45vh;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-.propertyManager-title {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.propertyManager-text {
-    align-self: flex-start;
-    text-align: center;
-    font-family: 'Akrobat';
-    font-weight: 100;
-    font-size: 25px;
-    margin-top: 30px;
-    opacity: 0;
-    width: 100%;
-}
-
-.propertyManager-bg {
-    position: absolute;
-    width: 100%;
-    background-color: rgba(165, 165, 165, 0.03);
-}
-
-.socialdashboard {
-    background-image: url(./social.png);
-    height: 45vh;
-    width: 25%;
-    transition: all 400ms;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    padding-left: 10px;
-    padding-right: 10px;
-    opacity: 0;
-}
-
-.socialdashboard:hover {
-    height: 45vh;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-.socialdashboard-title {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-}
-
-.socialdashboard-text {
-    align-self: flex-start;
-    text-align: center;
-    font-family: 'Akrobat';
-    font-weight: 100;
-    font-size: 28px;
-    margin-top: 30px;
-    opacity: 0;
-}
-
-.socialdashboard-bg {
-    position: absolute;
-    width: 100%;
-    background-color: rgba(165, 165, 165, 0.03);
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70%;
+        color: white;
+    }
+    .presentation-title {
+        font-family: 'Akrobat';
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        margin-top: -320px;
+        font-family: 'Akrobat';
+        position: absolute;
+    }
+    /* 
+    @media only screen and (max-width: 1366px) {
+        .presentation-title {
+            margin-top: 29.5vh;
+        }
+    } */
+    .presentation-btn {
+        position: absolute;
+        width: 130px;
+        height: 45px;
+        background: rgba(255, 255, 255, 0.5);
+        font-size: 16px;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        margin-top: -140px;
+        font-family: 'Akrobat';
+    }
+    .spacer2 {
+        aspect-ratio: 960/540;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -2;
+        position: fixed;
+        display: none;
+    }
+    .layer2 {
+        background-image: url("./mountain-peak-night-dusk.jpg");
+        background-size: cover;
+        transform: scale(1.2);
+    }
+    .black_layer {
+        aspect-ratio: 960/540;
+        width: 100%;
+        height: 700px;
+        background-repeat: no-repeat;
+        background-image: url("./mountain-peak-night-dusk.jpg");
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+        /* overflow-x: hidden; */
+    }
+    .portfolio {
+        width: 100%;
+        height: 45vh;
+        margin-top: -420px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(165, 165, 165, 0.03);
+    }
+    .crowdfunding {
+        background-image: url(./image-hero-mobile.jpg);
+        height: 45vh;
+        width: 25%;
+        transition: all 400ms;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        opacity: 0;
+        flex-basis: 100%;
+        opacity: 0.8;
+    }
+    .crowdfunding:hover {
+        background-color: rgba(129, 129, 129, 0.3);
+        height: 45vh;
+        cursor: pointer;
+        opacity: 0.6;
+    }
+    .crowdfunding-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .crowdfunding-text {
+        align-self: flex-start;
+        text-align: center;
+        font-family: 'Akrobat';
+        font-weight: 100;
+        font-size: 28px;
+        margin-top: 30px;
+        opacity: 0.8;
+    }
+    .crowdfunding-bg {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(165, 165, 165, 0.03);
+    }
+    .pokeApi {
+        background-image: url(./api_rest.png);
+        background-size: cover;
+        height: 45vh;
+        width: 25%;
+        transition: all 400ms;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        opacity: 0;
+        padding-top: 20px;
+        opacity: 0.8;
+        flex-basis: 100%;
+    }
+    .pokeApi:hover {
+        background-color: rgba(129, 129, 129, 0.3);
+        height: 45vh;
+        cursor: pointer;
+        opacity: 0.6;
+    }
+    .pokeApi-title {
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Akrobat';
+        font-weight: 100;
+    }
+    .pokeApi-bg {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(165, 165, 165, 0.03);
+    }
+    .propertyManager {
+        height: 45vh;
+        width: 25%;
+        transition: all 400ms;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        opacity: 0.8;
+        flex-basis: 100%;
+    }
+    .propertyManager:hover {
+        background-color: rgba(129, 129, 129, 0.3);
+        height: 45vh;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    .propertyManager-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .propertyManager-text {
+        align-self: flex-start;
+        text-align: center;
+        font-family: 'Akrobat';
+        font-weight: 100;
+        font-size: 25px;
+        margin-top: 30px;
+        opacity: 0.8;
+        width: 100%;
+    }
+    .propertyManager-bg {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(165, 165, 165, 0.03);
+    }
+    .socialdashboard {
+        background-image: url(./social.png);
+        height: 45vh;
+        width: 25%;
+        transition: all 400ms;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        padding-left: 10px;
+        padding-right: 10px;
+        opacity: 0.8;
+        flex-basis: 100%;
+    }
+    .socialdashboard:hover {
+        height: 45vh;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    .socialdashboard-title {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+    .socialdashboard-text {
+        align-self: flex-start;
+        text-align: center;
+        font-family: 'Akrobat';
+        font-weight: 100;
+        font-size: 28px;
+        margin-top: 30px;
+        opacity: 0.8;
+    }
+    .socialdashboard-bg {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(165, 165, 165, 0.03);
+    }
 }
