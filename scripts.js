@@ -29,9 +29,9 @@ if (window.innerWidth > 600) {
     gsap.fromTo('.header_left-logoImg', { scaleX: 1, scaleY: 1 }, { delay: 1.5, scaleX: 0.8, scaleY: 0.8 })
     gsap.fromTo('.header_left-logoImg', { rotation: 180 }, { delay: 1.5, rotation: 180 })
         //Animación barra derecha:
-    gsap.fromTo(".header_right-linkedIn", { scaleX: 1.7, scaleY: 1.7, x: 300 }, { duration: 1, x: 0 })
-    gsap.fromTo('.header_right-github', { scaleX: 1.7, scaleY: 1.7, x: 300 }, { duration: 1, x: 0, scaleX: 1.7, scaleY: 1.7 })
-    gsap.fromTo('.header_right-contact ', { scaleX: 1.7, scaleY: 1.7, x: 300 }, { duration: 1, x: 0, scaleX: 1.7, scaleY: 1.7 })
+    gsap.fromTo(".header_right-linkedIn", { scaleX: 1.7, scaleY: 1.7, x: 300 }, { delay: 1, duration: 1, x: 0 })
+    gsap.fromTo('.header_right-github', { scaleX: 1.7, scaleY: 1.7, x: 300 }, { delay: 1, duration: 1, x: 0, scaleX: 1.7, scaleY: 1.7 })
+    gsap.fromTo('.header_right-contact ', { scaleX: 1.7, scaleY: 1.7, x: 300 }, { delay: 1, duration: 1, x: 0, scaleX: 1.7, scaleY: 1.7 })
 
 }
 
