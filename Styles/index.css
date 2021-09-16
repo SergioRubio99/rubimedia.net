@@ -556,7 +556,7 @@ button {
         background-position: center;
         background-size: cover;
         z-index: -1;
-        position: fixed;
+        position: block;
         background-color: rgba(0, 0, 0, 0.8);
         /* overflow-x: hidden; */
     }
